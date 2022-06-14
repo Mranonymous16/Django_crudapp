@@ -17,7 +17,7 @@ def emp(request):
     else:
         form = EmployeeForm()
     return render(request,'employee/index.html',{'form':form})
-def fun(request):
+def main(request):
     return render(request,'employee/main.html')
 def show(request):
     employees = Employee.objects.all()
